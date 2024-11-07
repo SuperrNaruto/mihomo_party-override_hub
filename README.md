@@ -10,7 +10,7 @@
 
 [Mihomo Party 下载地址](https://github.com/mihomo-party-org/mihomo-party/releases)
 
-###使用方法
+### 使用方法
 
 [Mihomo Party 覆写仓库](https://github.com/mihomo-party-org/override-hub)
 
