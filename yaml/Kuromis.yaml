@@ -329,6 +329,7 @@ rule-providers:
     url: 'https://github.com/Repcz/Tool/raw/X/Clash/Rules/Reject.list'
     interval: 86400
     path: ./rule-providers/AD.list
+
 rules:
   - RULE-SET,Apple,Apple
   - RULE-SET,BiliBili,BiliBili
