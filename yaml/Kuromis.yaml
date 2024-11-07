@@ -210,6 +210,7 @@ proxy-groups:
     type: url-test
     interval: 300
     tolerance: 50
+
   - name: 🇺🇸 United States
     include-all: true
     filter: (?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
@@ -304,6 +305,12 @@ rule-providers:
     url: "https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Clash/Spotify/Spotify_No_Resolve.yaml"
     interval: 86400
     path: ./ruleset/Spotify_No_Resolve.yaml
+  github:
+    type: http
+    behavior: classical
+    url: "https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Clash/GitLab/GitLab.yaml"
+    interval: 86400
+    path: ./ruleset/GitLab_No_Resolve.yaml
   Lan:
     type: http
     behavior: classical
@@ -335,6 +342,7 @@ rules:
   - RULE-SET,Telegram,Telegram
   - RULE-SET,Emby,Emby
   - RULE-SET,Microsoft,Microsoft
+  - GEOSITE,github,Celect
   - RULE-SET,Lan,DIRECT
   - RULE-SET,ChinaMax,DIRECT
   - RULE-SET,AD,REJECT
