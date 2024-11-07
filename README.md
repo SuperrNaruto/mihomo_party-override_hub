@@ -1,4 +1,4 @@
-## Mihomo Party 覆写仓库
+## Mihomo Party 个人覆写仓库
 
 各大机场覆写仓库 佛系更新
 
