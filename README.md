@@ -1,6 +1,8 @@
 ## Mihomo Party 覆写仓库
 
 各大机场覆写仓库正在完善中
+[Mihomo Party 下载地址](https://github.com/mihomo-party-org/mihomo-party/releases)
+[Mihomo Party 官方覆写仓库](https://github.com/mihomo-party-org/override-hub)
 
 ### 免责申明
 
