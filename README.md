@@ -1,6 +1,6 @@
 ## Mihomo Party 个人覆写仓库
 
-各大机场覆写yaml文件  佛系更新
+机场覆写yaml文件  佛系更新
 
 ### Mihomo Party
 
