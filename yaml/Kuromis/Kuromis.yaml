@@ -310,7 +310,7 @@ rules:
   - RULE-SET,Google,Google
   - RULE-SET,Telegram,Telegram
   - RULE-SET,Microsoft,Microsoft
-  - GEOSITE,github,Celect
+  - GEOSITE,github,Auto
   - RULE-SET,Lan,DIRECT
   - RULE-SET,ChinaMax,DIRECT
   - RULE-SET,AD,REJECT
