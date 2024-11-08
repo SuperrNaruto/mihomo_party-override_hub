@@ -1,13 +1,9 @@
 proxy-groups:
-  - name: Celect
-    type: select
-    proxies:
-      - Auto
-      - xiuxiu
-      - DIRECT
   - name: xiuxiu
     include-all: true
     type: select
+    proxies:
+      - Auto
   - name: Auto
     type: url-test
     include-all: true
@@ -329,7 +325,6 @@ rule-providers:
     url: 'https://github.com/Repcz/Tool/raw/X/Clash/Rules/Reject.list'
     interval: 86400
     path: ./rule-providers/AD.list
-
 rules:
   - RULE-SET,Apple,Apple
   - RULE-SET,BiliBili,BiliBili
@@ -343,7 +338,7 @@ rules:
   - RULE-SET,Telegram,Telegram
   - RULE-SET,Emby,Emby
   - RULE-SET,Microsoft,Microsoft
-  - GEOSITE,github,Celect
+  - GEOSITE,github,Auto
   - RULE-SET,Lan,DIRECT
   - RULE-SET,ChinaMax,DIRECT
   - RULE-SET,AD,REJECT
