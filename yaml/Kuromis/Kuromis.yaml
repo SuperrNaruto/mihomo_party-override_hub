@@ -1,13 +1,9 @@
 proxy-groups:
-  - name: Celect
+  - name:Kuromis
+    include-all: true
     type: select
     proxies:
       - Auto
-      - Kuromis
-      - DIRECT
-  - name: Kuromis
-    include-all: true
-    type: select
   - name: Auto
     type: url-test
     include-all: true
