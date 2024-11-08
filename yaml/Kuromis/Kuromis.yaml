@@ -313,7 +313,6 @@ rules:
   - RULE-SET,Steam,Steam
   - RULE-SET,Google,Google
   - RULE-SET,Telegram,Telegram
-  - RULE-SET,Emby,Emby
   - RULE-SET,Microsoft,Microsoft
   - GEOSITE,github,Celect
   - RULE-SET,Lan,DIRECT
