@@ -3,9 +3,9 @@ proxy-groups:
     type: select
     proxies:
       - Auto
-      - xiuxiu
+      - Kuromis
       - DIRECT
-  - name: xiuxiu
+  - name: Kuromis
     include-all: true
     type: select
   - name: Auto
@@ -17,7 +17,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - xiuxiu
+      - Kuromis
       - 🇭🇰 Hong Kong
       - 🇸🇬 Singapore
       - 🇯🇵 Japan
@@ -30,7 +30,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - xiuxiu
+      - Kuromis
       - 🇭🇰 Hong Kong
       - 🇸🇬 Singapore
       - 🇯🇵 Japan
@@ -42,7 +42,7 @@ proxy-groups:
   - name: Netflix
     type: select
     proxies:
-      - xiuxiu
+      - Kuromis
       - 🇭🇰 Hong Kong
       - 🇸🇬 Singapore
       - 🇯🇵 Japan
@@ -54,7 +54,7 @@ proxy-groups:
   - name: Disney
     type: select
     proxies:
-      - xiuxiu
+      - Kuromis
       - 🇭🇰 Hong Kong
       - 🇸🇬 Singapore
       - 🇯🇵 Japan
@@ -66,7 +66,7 @@ proxy-groups:
   - name: TikTok
     type: select
     proxies:
-      - xiuxiu
+      - Kuromis
       - 🇭🇰 Hong Kong
       - 🇸🇬 Singapore
       - 🇯🇵 Japan
@@ -78,7 +78,7 @@ proxy-groups:
   - name: GlobalMedia
     type: select
     proxies:
-      - xiuxiu
+      - Kuromis
       - 🇭🇰 Hong Kong
       - 🇸🇬 Singapore
       - 🇯🇵 Japan
@@ -90,7 +90,7 @@ proxy-groups:
   - name: OpenAI
     type: select
     proxies:
-      - xiuxiu
+      - Kuromis
       - 🇭🇰 Hong Kong
       - 🇸🇬 Singapore
       - 🇯🇵 Japan
@@ -102,7 +102,7 @@ proxy-groups:
   - name: Google
     type: select
     proxies:
-      - xiuxiu
+      - Kuromis
       - 🇭🇰 Hong Kong
       - 🇸🇬 Singapore
       - 🇯🇵 Japan
@@ -115,7 +115,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - xiuxiu
+      - Kuromis
       - 🇭🇰 Hong Kong
       - 🇸🇬 Singapore
       - 🇯🇵 Japan
@@ -128,7 +128,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - xiuxiu
+      - Kuromis
       - 🇭🇰 Hong Kong
       - 🇸🇬 Singapore
       - 🇯🇵 Japan
@@ -151,7 +151,7 @@ proxy-groups:
   - name: Telegram
     type: select
     proxies:
-      - xiuxiu
+      - Kuromis
       - 🇭🇰 Hong Kong
       - 🇸🇬 Singapore
       - 🇯🇵 Japan
@@ -331,4 +331,4 @@ rules:
   - RULE-SET,Lan,DIRECT
   - RULE-SET,ChinaMax,DIRECT
   - RULE-SET,AD,REJECT
-  - MATCH,xiuxiu
+  - MATCH,Kuromis
