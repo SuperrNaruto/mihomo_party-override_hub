@@ -1,5 +1,5 @@
 proxy-groups:
-  - name:Kuromis
+  - name: Kuromis
     include-all: true
     type: select
     proxies:
