@@ -3,13 +3,9 @@ proxy-groups:
     include-all: true
     type: select
     proxies:
-      - Auto
+      - 自动选择
     icon: https://github.com/clash-verge-rev/clash-verge-rev/raw/main/src-tauri/icons/icon.png
-  - name: Auto
-    type: url-test
-    include-all: true
-    interval: 300
-    tolerance: 50
+
   - name: 国外网站
     include-all: true
     type: select
@@ -114,7 +110,7 @@ proxy-groups:
     include-all: true
     type: select
     proxies:
-      - REJECT
+      - TKV Network
       - Direct
       - 自动选择
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
