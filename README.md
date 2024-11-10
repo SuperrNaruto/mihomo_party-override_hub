@@ -2,6 +2,8 @@
 
 机场覆写yaml文件  佛系更新
 
+[Academy City Airport](https://raw.githubusercontent.com/xi11-ov/mihomo_party-overwrite_file/main/yaml/Academy%20City%20Airport/Academy%20City%20Airport.yaml)
+
 ### Mihomo Party
 
 [Mihomo Party 官方网页](https://mihomo.party/)
