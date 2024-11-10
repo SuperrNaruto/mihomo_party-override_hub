@@ -1,4 +1,4 @@
-## Mihomo Party 个人覆写仓库
+## Mihomo Party 机场覆写仓库
 
 机场覆写yaml文件  佛系更新
 
