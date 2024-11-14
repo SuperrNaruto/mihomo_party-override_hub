@@ -13,7 +13,6 @@ proxy-groups:
   - name: Apple
     type: url-test
     include-all: true
-    type: select
     proxies:
       - DIRECT
       - Kuromis
@@ -28,7 +27,6 @@ proxy-groups:
   - name: BiliBili
     type: url-test
     include-all: true
-    type: select
     proxies:
       - DIRECT
       - Kuromis
@@ -43,7 +41,6 @@ proxy-groups:
   - name: Netflix
     type: url-test
     include-all: true
-    type: select
     proxies:
       - Kuromis
       - 🇭🇰 Hong Kong
@@ -57,7 +54,6 @@ proxy-groups:
   - name: Disney
     type: url-test
     include-all: true
-    type: select
     proxies:
       - Kuromis
       - 🇭🇰 Hong Kong
@@ -71,7 +67,6 @@ proxy-groups:
   - name: TikTok
     type: url-test
     include-all: true
-    type: select
     proxies:
       - Kuromis
       - 🇭🇰 Hong Kong
@@ -85,7 +80,6 @@ proxy-groups:
   - name: GlobalMedia
     type: url-test
     include-all: true
-    type: select
     proxies:
       - Kuromis
       - 🇭🇰 Hong Kong
@@ -99,7 +93,6 @@ proxy-groups:
   - name: OpenAI
     type: url-test
     include-all: true
-    type: select
     proxies:
       - Kuromis
       - 🇭🇰 Hong Kong
@@ -113,7 +106,6 @@ proxy-groups:
   - name: Google
     type: url-test
     include-all: true
-    type: select
     proxies:
       - Kuromis
       - 🇭🇰 Hong Kong
@@ -127,7 +119,6 @@ proxy-groups:
   - name: Microsoft
     type: url-test
     include-all: true
-    type: select
     proxies:
       - DIRECT
       - Kuromis
@@ -142,7 +133,6 @@ proxy-groups:
   - name: Steam
     type: url-test
     include-all: true
-    type: select
     proxies:
       - DIRECT
       - Kuromis
@@ -157,7 +147,6 @@ proxy-groups:
   - name: PayPal
     type: url-test
     include-all: true
-    type: select
     proxies:
       - 🇭🇰 Hong Kong
       - 🇸🇬 Singapore
@@ -170,7 +159,6 @@ proxy-groups:
   - name: Telegram
     type: url-test
     include-all: true
-    type: select
     proxies:
       - Kuromis
       - 🇭🇰 Hong Kong
