@@ -22,6 +22,8 @@ proxy-groups:
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
       - 🇰🇷 South Korea
+      - 🇩🇪 Germany
+
 
   - name: BiliBili
     type: select
@@ -35,6 +37,8 @@ proxy-groups:
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
       - 🇰🇷 South Korea
+      - 🇩🇪 Germany
+
 
   - name: Netflix
     type: select
@@ -47,6 +51,8 @@ proxy-groups:
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
       - 🇰🇷 South Korea
+      - 🇩🇪 Germany
+
 
   - name: Disney
     type: select
@@ -59,6 +65,8 @@ proxy-groups:
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
       - 🇰🇷 South Korea
+      - 🇩🇪 Germany
+
 
   - name: TikTok
     type: select
@@ -71,6 +79,8 @@ proxy-groups:
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
       - 🇰🇷 South Korea
+      - 🇩🇪 Germany
+
 
   - name: GlobalMedia
     type: select
@@ -83,6 +93,8 @@ proxy-groups:
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
       - 🇰🇷 South Korea
+      - 🇩🇪 Germany
+
 
   - name: OpenAI
     type: select
@@ -95,6 +107,8 @@ proxy-groups:
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
       - 🇰🇷 South Korea
+      - 🇩🇪 Germany
+
 
   - name: Google
     type: select
@@ -107,6 +121,8 @@ proxy-groups:
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
       - 🇰🇷 South Korea
+      - 🇩🇪 Germany
+
 
   - name: Microsoft
     type: select
@@ -120,6 +136,8 @@ proxy-groups:
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
       - 🇰🇷 South Korea
+      - 🇩🇪 Germany
+
 
   - name: Steam
     type: select
@@ -133,6 +151,8 @@ proxy-groups:
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
       - 🇰🇷 South Korea
+      - 🇩🇪 Germany
+
 
   - name: PayPal
     type: select
@@ -144,6 +164,7 @@ proxy-groups:
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
       - 🇰🇷 South Korea
+      - 🇩🇪 Germany
 
   - name: Telegram
     type: select
@@ -156,6 +177,7 @@ proxy-groups:
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
       - 🇰🇷 South Korea
+      - 🇩🇪 Germany
 
 
   - name: 🇭🇰 Hong Kong
@@ -204,6 +226,12 @@ proxy-groups:
     type: url-test
     interval: 300
     tolerance: 50
+
+  - name: 🇩🇪 Germany
+    include-all: true
+    filter: (?i)🇩🇪|德国|DE|German|Germany|GER|德
+    type: url-test
+    interval: 300
 
 
 rule-providers:
