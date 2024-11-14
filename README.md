@@ -26,14 +26,6 @@
 |[TKV Network](https://raw.githubusercontent.com/xi11-ov/mihomo_party-overwrite_file/main/yaml/TKV%20Network/TKV%20Network.yaml)|[x]|
 |[WestData](https://raw.githubusercontent.com/xi11-ov/mihomo_party-overwrite_file/main/yaml/WestData/WestData.yaml)|[WestData分流代理全节点](https://raw.githubusercontent.com/xi11-ov/mihomo_party-overwrite_file/main/yaml/WestData/WestData%E5%88%86%E6%B5%81%E4%BB%A3%E7%90%86%E5%85%A8%E8%8A%82%E7%82%B9.yaml)|
 
-
-
-
-
-
-
-[Academy City Airport](https://raw.githubusercontent.com/xi11-ov/mihomo_party-overwrite_file/main/yaml/Academy%20City%20Airport/Academy%20City%20Airport.yaml)  [Kuromis](https://raw.githubusercontent.com/xi11-ov/mihomo_party-overwrite_file/main/yaml/Kuromis/Kuromis%20.yaml)  [TAG](https://raw.githubusercontent.com/xi11-ov/mihomo_party-overwrite_file/main/yaml/TAG/TAG.yaml)  [TKV Network](https://raw.githubusercontent.com/xi11-ov/mihomo_party-overwrite_file/main/yaml/TKV%20Network/TKV%20Network.yaml)  [WestData](https://raw.githubusercontent.com/xi11-ov/mihomo_party-overwrite_file/main/yaml/WestData/WestData.yaml)
-
 ## 关于Mihomo Party
 
 [Mihomo Party 官方网页](https://mihomo.party/)
