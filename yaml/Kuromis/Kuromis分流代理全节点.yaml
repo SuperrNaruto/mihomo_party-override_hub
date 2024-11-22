@@ -4,6 +4,14 @@ proxy-groups:
     type: select
     proxies:
       - Auto
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇨🇳 Taiwan
+      - 🇲🇴 Mocao
+      - 🇰🇷 South Korea
+      - 🇩🇪 Germany
 
   - name: Auto
     type: url-test
