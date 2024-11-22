@@ -13,7 +13,6 @@ proxy-groups:
       - 🇰🇷 South Korea
       - 🇩🇪 Germany
 
-
   - name: Auto
     type: url-test
     include-all: true
