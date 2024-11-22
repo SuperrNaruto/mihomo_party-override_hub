@@ -19,7 +19,6 @@ proxy-groups:
     interval: 300
 
   - name: Apple
-    type: url-test
     include-all: true
     type: select
     proxies:
@@ -35,7 +34,6 @@ proxy-groups:
       - 🇩🇪 Germany
 
   - name: BiliBili
-    type: url-test
     include-all: true
     type: select
     proxies:
@@ -51,7 +49,6 @@ proxy-groups:
       - 🇩🇪 Germany
 
   - name: Netflix
-    type: url-test
     include-all: true
     type: select
     proxies:
@@ -66,7 +63,6 @@ proxy-groups:
       - 🇩🇪 Germany
 
   - name: Disney
-    type: url-test
     include-all: true
     type: select
     proxies:
@@ -81,7 +77,6 @@ proxy-groups:
       - 🇩🇪 Germany
 
   - name: TikTok
-    type: url-test
     include-all: true
     type: select
     proxies:
@@ -96,7 +91,6 @@ proxy-groups:
       - 🇩🇪 Germany
 
   - name: GlobalMedia
-    type: url-test
     include-all: true
     type: select
     proxies:
@@ -111,7 +105,6 @@ proxy-groups:
       - 🇩🇪 Germany
 
   - name: OpenAI
-    type: url-test
     include-all: true
     type: select
     proxies:
@@ -126,7 +119,6 @@ proxy-groups:
       - 🇩🇪 Germany
 
   - name: Google
-    type: url-test
     include-all: true
     type: select
     proxies:
@@ -141,7 +133,6 @@ proxy-groups:
       - 🇩🇪 Germany
 
   - name: Microsoft
-    type: url-test
     include-all: true
     type: select
     proxies:
@@ -157,7 +148,6 @@ proxy-groups:
       - 🇩🇪 Germany
 
   - name: Steam
-    type: url-test
     include-all: true
     type: select
     proxies:
@@ -173,7 +163,6 @@ proxy-groups:
       - 🇩🇪 Germany
 
   - name: PayPal
-    type: url-test
     include-all: true
     type: select
     proxies:
@@ -187,7 +176,6 @@ proxy-groups:
       - 🇩🇪 Germany
 
   - name: Telegram
-    type: url-test
     include-all: true
     type: select
     proxies:
