@@ -10,8 +10,6 @@ proxy-groups:
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
-      - 🇰🇷 South Korea
-      - 🇩🇪 Germany
 
   - name: Auto
     type: url-test
@@ -29,8 +27,6 @@ proxy-groups:
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
-      - 🇰🇷 South Korea
-      - 🇩🇪 Germany
 
   - name: BiliBili
     type: select
@@ -43,8 +39,6 @@ proxy-groups:
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
-      - 🇰🇷 South Korea
-      - 🇩🇪 Germany
 
   - name: Netflix
     type: select
@@ -56,8 +50,6 @@ proxy-groups:
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
-      - 🇰🇷 South Korea
-      - 🇩🇪 Germany
 
   - name: Disney
     type: select
@@ -69,8 +61,6 @@ proxy-groups:
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
-      - 🇰🇷 South Korea
-      - 🇩🇪 Germany
 
   - name: TikTok
     type: select
@@ -82,8 +72,6 @@ proxy-groups:
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
-      - 🇰🇷 South Korea
-      - 🇩🇪 Germany
 
   - name: GlobalMedia
     type: select
@@ -95,8 +83,6 @@ proxy-groups:
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
-      - 🇰🇷 South Korea
-      - 🇩🇪 Germany
 
   - name: OpenAI
     type: select
@@ -108,8 +94,6 @@ proxy-groups:
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
-      - 🇰🇷 South Korea
-      - 🇩🇪 Germany
 
   - name: Google
     type: select
@@ -121,8 +105,6 @@ proxy-groups:
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
-      - 🇰🇷 South Korea
-      - 🇩🇪 Germany
 
   - name: Microsoft
     type: select
@@ -135,8 +117,6 @@ proxy-groups:
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
-      - 🇰🇷 South Korea
-      - 🇩🇪 Germany
 
   - name: Steam
     type: select
@@ -149,8 +129,6 @@ proxy-groups:
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
-      - 🇰🇷 South Korea
-      - 🇩🇪 Germany
 
   - name: Telegram
     type: select
@@ -162,8 +140,6 @@ proxy-groups:
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
-      - 🇰🇷 South Korea
-      - 🇩🇪 Germany
 
   - name: Spotify
     type: select
@@ -176,8 +152,6 @@ proxy-groups:
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
-      - 🇰🇷 South Korea
-      - 🇩🇪 Germany
 
   - name: Emby
     type: select
@@ -190,9 +164,6 @@ proxy-groups:
       - 🇺🇸 United States
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
-      - 🇰🇷 South Korea
-      - 🇩🇪 Germany
-
 
   - name: 🇭🇰 Hong Kong
     include-all: true
@@ -229,19 +200,6 @@ proxy-groups:
     filter: (?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
     type: url-test
     interval: 300
-
-  - name: 🇰🇷 South Korea
-    include-all: true
-    filter: (?i)🇰🇷|韩国|KR|Korea|KOR|首尔|韩|韓
-    type: url-test
-    interval: 300
-
-  - name: 🇩🇪 Germany
-    include-all: true
-    filter: (?i)🇩🇪|德国|DE|German|Germany|GER|德
-    type: url-test
-    interval: 300
-
 
 rule-providers:
   Apple:
