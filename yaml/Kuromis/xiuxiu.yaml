@@ -293,13 +293,6 @@ rule-providers:
     interval: 86400
     path: ./ruleset/Spotify_No_Resolve.yaml
 
-  github:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/blob/master/rule/Clash/GitLab/GitLab.yaml"
-    interval: 86400
-    path: ./ruleset/GitLab_No_Resolve.yaml
-
   Lan:
     type: http
     behavior: classical
