@@ -307,14 +307,6 @@ rule-providers:
     interval: 86400
     path: ./ruleset/ChinaMax_Classical_No_IPv6_No_Resolve.yaml
 
-  AD:
-    type: http
-    behavior: classical
-    url: 'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list'
-    interval: 86400
-    path: ./rule-providers/BanProgramAD.list
-
-
 rules:
   - RULE-SET,Apple,Apple
   - RULE-SET,BiliBili,BiliBili
@@ -330,5 +322,4 @@ rules:
   - RULE-SET,Microsoft,Microsoft
   - RULE-SET,Lan,DIRECT
   - RULE-SET,ChinaMax,DIRECT
-  - RULE-SET,AD,REJECT
   - MATCH,xiuxiu
