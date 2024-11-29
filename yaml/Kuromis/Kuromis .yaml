@@ -191,13 +191,13 @@ proxy-groups:
   - name: 🇭🇰 Hong Kong
     include-all: true
     filter: (?i)🇭🇰|香港|HK|hk|Hong Kong|HongKong|hongkong
-    type: url-test
+    type: select
     interval: 300
 
   - name: 🇲🇴 Mocao
     include-all: true
     filter: (?i)🇲🇴|澳门|MO|Mocao|mo cao
-    type: url-test
+    type: select
     interval: 300
 
   - name: 🇨🇳 Taiwan
@@ -209,31 +209,31 @@ proxy-groups:
   - name: 🇸🇬 Singapore
     include-all: true
     filter: (?i)🇸🇬|新加坡|狮城|SG|Singapore
-    type: url-test
+    type: select
     interval: 300
 
   - name: 🇯🇵 Japan
     include-all: true
     filter: (?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
-    type: url-test
+    type: select
     interval: 300
 
   - name: 🇺🇸 United States
     include-all: true
     filter: (?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
-    type: url-test
+    type: select
     interval: 300
 
   - name: 🇰🇷 South Korea
     include-all: true
     filter: (?i)🇰🇷|韩国|KR|Korea|KOR|首尔|韩|韓
-    type: url-test
+    type: select
     interval: 300
 
   - name: 🇩🇪 Germany
     include-all: true
     filter: (?i)🇩🇪|德国|DE|German|Germany|GER|德
-    type: url-test
+    type: select
     interval: 300
 
 
