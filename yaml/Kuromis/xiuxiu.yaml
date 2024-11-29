@@ -62,6 +62,17 @@ proxy-groups:
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
 
+  - name: HBO
+    type: select
+    proxies:
+      - xiuxiu
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇨🇳 Taiwan
+      - 🇲🇴 Mocao
+
   - name: TikTok
     type: select
     proxies:
@@ -118,7 +129,7 @@ proxy-groups:
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
 
-  - name: Steam
+  - name: Game
     type: select
     proxies:
       - DIRECT
@@ -144,8 +155,8 @@ proxy-groups:
   - name: Spotify
     type: select
     proxies:
-      - DIRECT
       - xiuxiu
+      - DIRECT
       - 🇭🇰 Hong Kong
       - 🇸🇬 Singapore
       - 🇯🇵 Japan
@@ -165,119 +176,141 @@ proxy-groups:
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
 
+
   - name: 🇭🇰 Hong Kong
     include-all: true
     filter: (?i)🇭🇰|香港|HK|hk|Hong Kong|HongKong|hongkong
-    type: url-test
+    type: select
     interval: 300
 
   - name: 🇲🇴 Mocao
     include-all: true
     filter: (?i)🇲🇴|澳门|MO|Mocao|mo cao
-    type: url-test
+    type: select
     interval: 300
 
   - name: 🇨🇳 Taiwan
     include-all: true
     filter: (?i)🇹🇼|台湾|新北|彰化|TW|Taiwan
-    type: url-test
+    type: select
     interval: 300
 
   - name: 🇸🇬 Singapore
     include-all: true
     filter: (?i)🇸🇬|新加坡|狮城|SG|Singapore
-    type: url-test
+    type: select
     interval: 300
 
   - name: 🇯🇵 Japan
     include-all: true
     filter: (?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
-    type: url-test
+    type: select
     interval: 300
 
   - name: 🇺🇸 United States
     include-all: true
     filter: (?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
-    type: url-test
+    type: select
     interval: 300
 
 rule-providers:
   Apple:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Classical_No_Resolve.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Classical.yaml"
     interval: 86400
-    path: ./ruleset/Apple_No_Resolve.yaml
+    path: ./ruleset/Apple_Classical.yaml
 
   BiliBili:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili_No_Resolve.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml"
     interval: 86400
-    path: ./ruleset/BiliBili_No_Resolve.yaml
+    path: ./ruleset/BiliBili.yaml
 
   Netflix:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix_No_Resolve.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml"
     interval: 86400
-    path: ./ruleset/Netflix_No_Resolve.yaml
+    path: ./ruleset/Netflix.yaml
 
   Disney:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney_No_Resolve.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.yaml"
     interval: 86400
-    path: ./ruleset/Disney_No_Resolve.yaml
+    path: ./ruleset/Disney.yaml
 
+  HBO:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.yaml"
+    interval: 86400
+    path: ./ruleset/HBO.yaml
+    
   TikTok:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok_No_Resolve.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml"
     interval: 86400
-    path: ./ruleset/TikTok_No_Resolve.yaml
+    path: ./ruleset/TikTok.yaml
 
   GlobalMedia:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical_No_Resolve.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical.yaml"
     interval: 86400
-    path: ./ruleset/GlobalMedia_Classical_No_Resolve.yaml
+    path: ./ruleset/GlobalMedia_Classical.yaml
 
   OpenAI:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI_No_Resolve.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml"
     interval: 86400
-    path: ./ruleset/OpenAI_No_Resolve.yaml
+    path: ./ruleset/OpenAI.yaml
 
   Google:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google_No_Resolve.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml"
     interval: 86400
-    path: ./ruleset/Google_No_Resolve.yaml
+    path: ./ruleset/Google.yaml
 
   Microsoft:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft_No_Resolve.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml"
     interval: 86400
-    path: ./ruleset/Microsoft_No_Resolve.yaml
+    path: ./ruleset/Microsoft.yaml
 
   Telegram:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram_No_Resolve.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml"
     interval: 86400
-    path: ./ruleset/Telegram_No_Resolve.yaml
+    path: ./ruleset/Telegram.yaml
 
   Steam:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam_No_Resolve.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.yaml"
     interval: 86400
     path: ./ruleset/Steam_No_Resolve.yaml
+
+  Epic:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Epic/Epic.yaml"
+    interval: 86400
+    path: ./ruleset/Epic.yaml
+
+  EA:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/EA/EA.yaml"
+    interval: 86400
+    path: ./ruleset/EA.yaml
 
   Emby:
     type: http
@@ -289,23 +322,23 @@ rule-providers:
   Spotify:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/blob/master/rule/Clash/Spotify/Spotify_No_Resolve.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/blob/master/rule/Clash/Spotify/Spotify.yaml"
     interval: 86400
-    path: ./ruleset/Spotify_No_Resolve.yaml
+    path: ./ruleset/Spotify.yaml
 
   Lan:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan_No_Resolve.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml"
     interval: 86400
-    path: ./ruleset/Lan_No_Resolve.yaml
+    path: ./ruleset/Lan.yaml
 
   ChinaMax:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Classical_No_IPv6_No_Resolve.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Classical_No_IPv6.yaml"
     interval: 86400
-    path: ./ruleset/ChinaMax_Classical_No_IPv6_No_Resolve.yaml
+    path: ./ruleset/ChinaMax_Classical_No_IPv6.yaml
 
 rules:
   - RULE-SET,Apple,Apple
@@ -313,9 +346,12 @@ rules:
   - RULE-SET,Netflix,Netflix
   - RULE-SET,Disney,Disney
   - RULE-SET,TikTok,TikTok
+  - RULE-SET,HBO,HBO
   - RULE-SET,GlobalMedia,GlobalMedia
   - RULE-SET,OpenAI,OpenAI
-  - RULE-SET,Steam,Steam
+  - RULE-SET,Steam,Game
+  - RULE-SET,Epic,Game
+  - RULE-SET,EA,Game
   - RULE-SET,Google,Google
   - RULE-SET,Telegram,Telegram
   - RULE-SET,Emby,Emby
