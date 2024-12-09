@@ -3,7 +3,6 @@ proxy-groups:
     include-all: true
     type: select
     proxies:
-      - DIRECT
       - Auto
       - 🇭🇰 Hong Kong
       - 🇸🇬 Singapore
