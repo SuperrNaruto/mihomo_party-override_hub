@@ -4,6 +4,7 @@ proxy-groups:
     type: select
     proxies:
       - Auto
+      - DIRECT
       - 🇭🇰 Hong Kong
       - 🇸🇬 Singapore
       - 🇯🇵 Japan
@@ -129,7 +130,20 @@ proxy-groups:
       - 🇨🇳 Taiwan
       - 🇲🇴 Mocao
 
-  - name: Game
+  - name: Steam
+    type: select
+    proxies:
+      - DIRECT
+      - xiuxiu
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇨🇳 Taiwan
+      - 🇲🇴 Mocao
+
+  - name: Emby
+    include-all: true
     type: select
     proxies:
       - DIRECT
@@ -266,6 +280,13 @@ rule-providers:
     interval: 86400
     path: ./ruleset/Microsoft.yaml
 
+  Emby:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/xi11-ov/xi/x/Emby/Clash//Emby.yaml"
+    interval: 86400
+    path: ./ruleset/Emby.yaml
+
   Telegram:
     type: http
     behavior: classical
@@ -279,20 +300,6 @@ rule-providers:
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.yaml"
     interval: 86400
     path: ./ruleset/Steam_No_Resolve.yaml
-
-  Epic:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Epic/Epic.yaml"
-    interval: 86400
-    path: ./ruleset/Epic.yaml
-
-  EA:
-    type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/EA/EA.yaml"
-    interval: 86400
-    path: ./ruleset/EA.yaml
 
   Lan:
     type: http
@@ -318,11 +325,10 @@ rules:
   - RULE-SET,HBO,HBO
   - RULE-SET,GlobalMedia,GlobalMedia
   - RULE-SET,OpenAI,OpenAI
-  - RULE-SET,Steam,Game
-  - RULE-SET,Epic,Game
-  - RULE-SET,EA,Game
+  - RULE-SET,Steam,Steam
   - RULE-SET,Google,Google
   - RULE-SET,Telegram,Telegram
+  - RULE-SET,Emby,Emby
   - RULE-SET,Microsoft,Microsoft
   - RULE-SET,Lan,DIRECT
   - RULE-SET,ChinaMax,DIRECT
