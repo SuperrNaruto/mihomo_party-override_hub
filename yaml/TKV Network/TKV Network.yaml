@@ -1,289 +1,129 @@
 proxy-groups:
-  - name: TKV Network
+  - name: Main Node
     include-all: true
     type: select
     proxies:
-      - 自动选择
-    icon: https://github.com/clash-verge-rev/clash-verge-rev/raw/main/src-tauri/icons/icon.png
+      - Auto Choose
 
-  - name: 国外网站
+  - name: Apple Services
     include-all: true
     type: select
     proxies:
-      - TKV Network
-      - Direct
-      - 自动选择
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
+      - Main Node
+      - Auto Choose
 
-  - name: 国际媒体
+  - name: Google Services
     include-all: true
     type: select
     proxies:
-      - TKV Network
-      - Direct
-      - 自动选择
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+      - Main Node
+      - Auto Choose
 
-  - name: 苹果服务
+  - name: Blocked Domains
     include-all: true
     type: select
     proxies:
-      - TKV Network
-      - Direct
-      - 自动选择
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_1.png
+      - Main Node
+      - Auto Choose
 
-  - name: 微软服务
+  - name: CHN Mainland
     include-all: true
     type: select
     proxies:
-      - TKV Network
-      - Direct
-      - 自动选择
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
+      - Directly
+      - Main Node
+      - Auto Choose
 
-  - name: 谷歌服务
+  - name: Auto Choose
     include-all: true
-    type: select
-    proxies:
-      - TKV Network
-      - Direct
-      - 自动选择
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
-
-  - name: 电报消息
-    include-all: true
-    type: select
-    proxies:
-      - TKV Network
-      - Direct
-      - 自动选择
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
-
-  - name: 推特消息
-    include-all: true
-    type: select
-    proxies:
-      - TKV Network
-      - Direct
-      - 自动选择
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png
-
-
-  - name: AI
-    include-all: true
-    type: select
-    proxies:
-      - TKV Network
-      - Direct
-      - 自动选择
-    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png
-
-  - name: 游戏平台
-    include-all: true
-    type: select
-    proxies:
-      - TKV Network
-      - Direct
-      - 自动选择
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png
-
-  - name: Emby
-    include-all: true
-    type: select
-    proxies:
-      - TKV Network
-      - Direct
-      - 自动选择
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png
-
-  - name: 广告拦截
-    include-all: true
-    type: select
-    proxies:
-      - REJECT
-      - Direct
-      - 自动选择
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png
-
-  - name: 兜底分流
-    include-all: true
-    type: select
-    proxies:
-      - TKV Network
-      - Direct
-      - 自动选择
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
-
-  - name: 自动选择
-    type: url-test
-    include-all: true
+    type: fallback
     url: http://www.gstatic.com/generate_204
-    interval: 300
 
-  - name: Direct
+  - name: Directly
     include-all: true
     type: select
     proxies:
       - DIRECT
 
-
 rule-providers:
-  AD:
+  reject:
     type: http
     behavior: classical
-    url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Reject.list
-    path: ./rule-providers/AD.list
+    url: https://raw.v2raysocks.com/Loyalsoldier/clash-rules/release/reject.txt
+    path: ./rule-providers/reject.yaml
+    interval: 86400
 
-  Apple:
+  icloud:
     type: http
     behavior: classical
-    url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Apple.list
-    path: ./rule-providers/Apple.list
+    url: https://raw.v2raysocks.com/Loyalsoldier/clash-rules/release/icloud.txt
+    path: ./rule-providers/icloud.yaml
+    interval: 86400
 
-  Google:
+  apple:
     type: http
     behavior: classical
-    url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Google.list
-    path: ./rule-providers/Google.list
+    url: https://raw.v2raysocks.com/Loyalsoldier/clash-rules/release/apple.txt
+    path: ./rule-providers/apple.yaml
+    interval: 86400
 
-  YouTube:
+  google:
     type: http
     behavior: classical
-    url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/YouTube.list
-    path: ./rule-providers/YouTube.list
+    url: https://raw.v2raysocks.com/Loyalsoldier/clash-rules/release/google.txt
+    path: ./rule-providers/google.yaml
+    interval: 86400
 
-  Telegram:
+  proxy:
     type: http
     behavior: classical
-    url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Telegram.list
-    path: ./rule-providers/Telegram.list
+    url: https://raw.v2raysocks.com/Loyalsoldier/clash-rules/release/proxy.txt
+    path: ./rule-providers/proxy.yaml
+    interval: 86400
 
-  Twitter:
+  direct:
     type: http
     behavior: classical
-    url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Twitter.list
-    path: ./rule-providers/Twitter.list
+    url: https://raw.v2raysocks.com/Loyalsoldier/clash-rules/release/direct.txt
+    path: ./rule-providers/direct.yaml
+    interval: 86400
 
-  Steam:
+  cncidr:
     type: http
     behavior: classical
-    url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Steam.list
-    path: ./rule-providers/Steam.list
+    url: https://raw.v2raysocks.com/Loyalsoldier/clash-rules/release/cncidr.txt
+    path: ./rule-providers/cncidr.yaml
+    interval: 86400
 
-  Epic:
+  lancidr:
     type: http
     behavior: classical
-    url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Epic.list
-    path: ./rule-providers/Epic.list
-
-  AI:
-    type: http
-    behavior: classical
-    url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/AI.list
-    path: ./rule-providers/AI.list
-
-  Emby:
-    type: http
-    behavior: classical
-    url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Emby.list
-    path: ./rule-providers/Emby.list
-
-  Spotify:
-    type: http
-    behavior: classical
-    url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Spotify.list
-    path: ./rule-providers/Spotify.list
-
-  Bahamut:
-    type: http
-    behavior: classical
-    url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Bahamut.list
-    path: ./rule-providers/Bahamut.list
-
-  Netflix:
-    type: http
-    behavior: classical
-    url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Netflix.list
-    path: ./rule-providers/Netflix.list
-
-  Disney:
-    type: http
-    behavior: classical
-    url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Disney.list
-    path: ./rule-providers/Disney.list
-
-  PrimeVideo:
-    type: http
-    behavior: classical
-    url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/PrimeVideo.list
-    path: ./rule-providers/PrimeVideo.list
-
-  HBO:
-    type: http
-    behavior: classical
-    url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/HBO.list
-    path: ./rule-providers/HBO.list
-
-  OneDrive:
-    type: http
-    behavior: classical
-    url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/OneDrive.list
-    path: ./rule-providers/OneDrive.list
-
-  Github:
-    type: http
-    behavior: classical
-    url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Github.list
-    path: ./rule-providers/Github.list
-
-  Microsoft:
-    type: http
-    behavior: classical
-    url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Microsoft.list
-    path: ./rule-providers/Microsoft.list
-
-  Lan:
-    type: http
-    behavior: classical
-    url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Lan.list
-    path: ./rule-providers/Lan.list
-
-  ProxyGFW:
-    type: http
-    behavior: classical
-    url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/ProxyGFW.list
-    path: ./rule-providers/ProxyGFW.list
-
-  China:
-    type: http
-    behavior: classical
-    url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/ChinaDomain.list
-    path: ./rule-providers/China.list
-
+    url: https://raw.v2raysocks.com/Loyalsoldier/clash-rules/release/lancidr.txt
+    path: ./rule-providers/lancidr.yaml
 
 rules:
-  - RULE-SET,AD,广告拦截
-  - RULE-SET,AI,AI
-  - RULE-SET,Apple,苹果服务
-  - RULE-SET,YouTube,谷歌服务
-  - RULE-SET,Google,谷歌服务
-  - RULE-SET,Telegram,电报消息
-  - RULE-SET,Twitter,推特消息
-  - RULE-SET,Steam,游戏平台
-  - RULE-SET,Epic,游戏平台
-  - RULE-SET,Emby,Emby
-  - RULE-SET,Spotify,国际媒体
-  - RULE-SET,Bahamut,国际媒体
-  - RULE-SET,Netflix,国际媒体
-  - RULE-SET,Disney,国际媒体
-  - RULE-SET,PrimeVideo,国际媒体
-  - RULE-SET,HBO,国际媒体
-  - GEOSITE,onedrive,微软服务
-  - GEOSITE,github,微软服务
-  - GEOSITE,microsoft,微软服务
-  - GEOSITE,gfw,国外网站
-  - RULE-SET,China,DIRECT
-  - GEOIP,lan,DIRECT
-  - GEOIP,CN,DIRECT
-  - MATCH,兜底分流
+  - PROCESS-NAME,v2ray,DIRECT
+  - PROCESS-NAME,Surge%203,DIRECT
+  - PROCESS-NAME,ss-local,DIRECT
+  - PROCESS-NAME,privoxy,DIRECT
+  - PROCESS-NAME,trojan,DIRECT
+  - PROCESS-NAME,trojan-go,DIRECT
+  - PROCESS-NAME,naive,DIRECT
+  - PROCESS-NAME,Thunder,DIRECT
+  - PROCESS-NAME,DownloadService,DIRECT
+  - PROCESS-NAME,qBittorrent,DIRECT
+  - PROCESS-NAME,Transmission,DIRECT
+  - PROCESS-NAME,fdm,DIRECT
+  - PROCESS-NAME,aria2c,DIRECT
+  - PROCESS-NAME,Folx,DIRECT
+  - PROCESS-NAME,NetTransport,DIRECT
+  - PROCESS-NAME,uTorrent,DIRECT
+  - PROCESS-NAME,WebTorrent,DIRECT
+  - RULE-SET,icloud,Apple Services
+  - RULE-SET,apple,Apple Services
+  - RULE-SET,google,Google Services
+  - RULE-SET,proxy,Blocked Domains
+  - RULE-SET,cncidr,CHN Mainland
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,lancidr,DIRECT,no-resolve
+  - MATCH,Main Node
