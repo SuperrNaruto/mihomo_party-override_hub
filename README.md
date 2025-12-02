@@ -14,11 +14,11 @@
 
 ## 关于Clash Party
 
-[Mihomo Party 官方网页](https://clashparty.org/)
+[Clash Party 官方网页](https://clashparty.org/)
 
-[Mihomo Party github首页](https://github.com/mihomo-party-org/clash-party)
+[Clash Party github首页](https://github.com/mihomo-party-org/clash-party)
 
-[Mihomo Party 下载地址](https://github.com/mihomo-party-org/mihomo-party/releases)
+[Clash Party 下载地址](https://github.com/mihomo-party-org/mihomo-party/releases)
 
-[Mihomo Party 覆写仓库](https://github.com/clash-party-org/override-hub)
+[Clash Party 覆写仓库](https://github.com/clash-party-org/override-hub)
 
